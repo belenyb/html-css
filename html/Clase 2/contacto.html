@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Contacto</title>
+<style>
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+h1 {
+    color:red;
+    text-align: center;
+}
+form label {
+    font-weight: bold;
+}
+form label span {
+    color: red;
+}
+.boton {
+    background-color:red;
+    color: white;
+    font-size: 18px;
+    height: 40px;
+    width: 80px;
+}
+.boton:hover {
+    background-color: white;
+    color: red;
+    font-size: 18px;
+    height: 40px;
+    width: 80px;
+}
+input [type=text], input [type=email] input[type=date] select {
+    width: 250px;
+    height: 20px;
+    font-size: 16px;
+}
+input:focus {
+    background-color: lightcoral;
+}
+/* Barra de navegación */ 
+ul li {
+    list-style: none; /* para sacar la viñeta */
+    float: left;
+    margin-left: 50px;
+    width: 200px;
+}
+header ul a {
+    display: block;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+header ul a:hover {
+    color:thistle
+}
+header ul {
+    clear: both;
+    background-color:red;
+    overflow: hidden;
+    align-items: center;
+    margin: 0 auto;
+    }
+</style>
+</head>
+<body>
+<header>
+    <ul>
+        <li><a href="Clase1/index.html"> Inicio </a></li>
+        <li><a href="quienes.html"> Nosotros </a></li>
+        <li><a href="contacto.html"> Contacto </a></li>
+    </ul>
+</header>
+
+    <h1>¡Escribinos, te respondemos a la brevedad!</h1>
+    <form action="" method="POST">
+    <div>
+
+        <label for="txtNombre">Nombre: <span>*</span></label>
+        <!-- Dibuja una caja de texto -->
+        <input type="text" name="txtNombre" id="txtNombre" required>
+    </div>
+    <div>
+        <label for="txtCorreo">Correo: <span>*</span></label>
+        <input type="email" name="txtCorreo" id="txtCorreo" required>
+    </div>
+    <div>
+        <label for="txtTelefono">Teléfono: <span>*</span></label>
+        <input type="text" name="txtTelefono" id="txtTelefono" placeholder="(+54) 11 2020 3030" required>
+    </div>
+    <div>
+        <label for="lstPais">País de Origen</label>
+        <select name="lstPais" id="lstPais">
+            <optgroup label="Sudamerica">
+                <option value="AR">Argentina</option>
+                <option value="CO">Colombia</option>
+                <option value="CL">Chile</option>
+            </optgroup>
+            <optgroup label="Europa">
+                <option value="AL">Alemania</option>
+                <option value="ES">España</option>
+                <option value="FR">Francia</option>
+            </optgroup>
+        </select>
+    </div>
+    <div>
+        <label for="txtFechanac">Fecha de nacimiento</label>
+        <input type="date" name="txtFechanac" id="txtFechanac">
+    </div>
+    <div>
+        <label for="lstAsunto">Asunto: <span>*</span></label>
+        <select name="lstAsunto" id="lstAsunto" required>
+            <option value="" disabled selected>Seleccionar</option>
+            <option value="Soporte">Soporte</option>
+            <option value="Ventas">Ventas</option>
+            <option value="Otros">Otros</option>
+        </select>
+    </div>
+    <div>    
+        <label for="txtMensaje">Mensaje: <span>*</span></label>
+        <textarea name="txtMensaje" id="txtMensaje" cols="150" rows="15" required resize=none></textarea>
+    </div>
+    <div>
+        <input type="checkbox" name="chkNewsletter" id="chkNewsletter">
+        <label for="chkNewsletter">Deseo recibir novedades por correo</label>
+    </div>
+    <div>
+        <input type="checkbox" name="chkPoliticas" id="chkPoliticas">
+        <label for="chkPoliticas">Acepto las políticas de privacidad y condiciones de uso</label>
+    </div>
+    <div>
+        <label for="optMayor">¿Es mayor de edad?</label>
+        Si <input type="radio" name="optMayor" id="optMayorSi">
+        No <input type="radio" name="optMayor" id="optMayorNo">
+    </div>
+    <div>
+    <input type="submit" value="Enviar" class="boton">
+    </div>
+    </form>
+</body>
+</html>

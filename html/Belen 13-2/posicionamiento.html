@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Posicionamiento</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="css/fontawesome/css/all.min.css" rel="stylesheet">
+    <link href="css/fontawesome/css/fontawesome.min.css" rel="stylesheet">    
+    <link rel="stylesheet" href="css/estilos1.css">
+    <link rel="stylesheet" href="css/estilos2.css">
+</head>
+<body>
+<style>
+    .contentBox {
+        position: absolute;
+        left: 30%;
+        top: 35%;
+        background-color: gray;
+        width: 500px;
+    }
+    .contentBox h2 {
+        text-align: center;
+        color: white;
+    }
+    .box1 {
+        background-color: blue;
+        position: relative;
+        left: 25%;
+        top: 10px;
+        padding: 10px;
+        width: 250px;
+        border: solid black;
+    }
+    .box2 {
+        background-color: red;
+        position: relative;
+        top: 30px;
+        left: 100px;
+        padding: 5%;
+        height: 100px;
+        width: 50px;
+        border: dotted;
+    }
+    .box3 {
+        background-color: yellow;
+        position: relative;
+        left: 70%;
+        top: 50%;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: solid white;
+    }
+</style>
+    <header>
+    <nav>
+        <ul>
+            <li><a href="index.html"> Inicio </a></li>
+            <li><a href="posicionamiento.html"> Posicionamiento </a></li>
+            <li><a href="contacto.html"> Contacto </a></li>
+        </ul>
+    </nav>
+    </header>
+<section class="main">
+ <h1>Posicionamiento con div</h1>
+ <h2>Contenedor Relative y Contenido Absolute</h2>
+ <p>Pueden ir cambiando las posiciones tanto del contenedor como de los box que están dentro (absolute, fixed, relative) y ver lo que sucede.
+<div class="contentBox">
+    <div class="box box1 "> 
+        <h2>Box1</h2>
+    </div>
+    <div class="box box2">
+        <h2>Box2</h2>
+    </div>
+    <div class="box box3">
+        <h2>Box3</h2>
+    </div>
+</div>
+</section>
+</body>
+</html>
