@@ -168,6 +168,7 @@ footer i:hover {
     background-size: 100% 100%;
     min-height: 550px;
     margin: 0;
+    height: 81vh;
 }
 .index h1 {
     font-size: 55px;
