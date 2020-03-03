@@ -3,8 +3,12 @@ body {
     background-color: #eeeeee;
     margin: 0;
 }
+body h1 {
+    color:  #537A5A !important;
+}
+/* __________________________________________Estilos de la barra de navegacion______________________________________ */
 .nav-link {
-    color: #4B4B4B !important;
+    color:  #537A5A !important;
     text-decoration: none;
     font-size: 20px;
     width: 250px;
@@ -12,23 +16,35 @@ body {
     text-align: center;
     font-weight: 400;
     line-height: 1.5;
+    font-weight: 600;
 }
  .active a {
-    font-weight: 700 !important;
+    font-weight: 750 !important;
     text-decoration: underline;
+    color: #537A5A !important;
 }
 .navbar {
-    padding: 0 12%;
-    margin-top: 10px;
+    padding: 0 15%;
+    margin-top: 0px;
+}
+.nav-link:hover {
+    font-weight: 800 !important;
 }
 .fabars {
     color: black;
 }
-.navbar-toggler-icon {
-    border: 1px solid #797676 !important;
+.navbar-toggler {
+    border: 1.5px solid black !important;
     border-radius: 3px;
     padding: 18px 22px;
+    margin-top: 10px;
+    margin-left: -30px;
 }
+.fa-bars {
+    color: #537A5A;
+    font-size: 25px;
+}
+/* ________________________________________Estilos de la pagina de contacto_________________________________________ */
 section {
     padding-bottom: 50px;
 }
@@ -36,7 +52,7 @@ form {
     padding-top: 50px;
 }
 #contacto h1, h2 {
-    font-weight: 800;
+    font-weight: 700;
 }
 #contacto h1 {
     font-size: 55px;
@@ -55,21 +71,23 @@ form {
     border-radius: 0;
 }
 .btn {
-    background-color: black;
+    background-color:  #537A5A;;
     color: white;
     border-radius: 0;
-    border: 1px solid;
-    text-transform: uppercase;
-    padding: 5px 30px;
+    border: 1px solid  #537A5A;;
+    text-transform: initial;
+    padding: 6px 12px;
 }
 .btn:hover {
     background-color: white;
-    color: black;
-    border: 1px solid black;
+    color:  #537A5A;;
+    border: 1px solid  #537A5A;;
 }
+/* _____________________________________________Estilos del footer__________________________________________________ */
 footer {
-    background-color: white;
+    background-color:  #537A5A;;
     padding: 50px;
+    color: white;
 }
 footer p {
     line-height: 1;
@@ -77,22 +95,30 @@ footer p {
     padding: 5px;
 }
 footer a {
-    color: black;
+    color: white;
     text-decoration: underline;
     font-weight: bold;
 }
+footer a:hover {
+    color: rgb(182, 172, 172);
+}
 footer i {
-    color: black;
-    border: solid black 0.5px;
+    color: white;
+    border: solid white 0.8px;
     border-radius: 50%;
     font-size: 35px;
     font-weight: bolder;
     text-align: center;
     padding: 8px 0 0;
-    margin: 0px 15px;
+    margin: 0px 2px;
     width: 55px;
     height: 55px;
 }
+footer i:hover {
+    color: rgb(182, 172, 172);
+    border: solid rgb(182, 172, 172) 0.8px;
+}
+/* _______________________________________Estilos de la pagina de proyectos________________________________________ */
 .proyectos {
     margin-top: 60px;
 }
@@ -111,11 +137,136 @@ footer i {
 .ejemplos {
     margin-top: 30px;
 }
-.ejemplos img {
-    height: 260px;
-    width: 100%;
-}
 .card button {
     text-transform: initial;
+    color: white;
+    background-color: #537A5A;
+    border: solid 1px #537A5A;
+    font-weight: 500;
+    text-decoration: none;
 }
-
+.card button:hover {
+    background-color: white;
+    color: #537A5A;
+    border: solid 1px #537A5A;
+    font-weight: 500;
+    text-decoration: none;
+}
+.card a {
+    color: #537A5A;
+    font-weight: 500;
+}
+.card h2 {
+    color:  #537A5A;
+}
+/* _________________________________________Estilos de la pagina de inicio_________________________________________ */
+#home {
+    /* Imagen descargada de pexels.com "free to use"*/
+    background-image: url('../images/fondo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+    min-height: 550px;
+    margin: 0;
+}
+.index h1 {
+    font-size: 55px;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: black;
+}
+.index h2 {
+    margin-bottom: 15px;
+    color: black;
+}
+.index a {
+    text-transform: initial;
+    padding: 5px 10px;
+    border: solid 1px #537A5A;
+    background-color: #537A5A;
+    color: white;
+    font-weight: 500;
+}
+.index a:hover {
+    background-color: white;
+    color: #537A5A;
+    border: solid 1px #537A5A;
+    font-weight: 500;
+}
+/* _____________________________________Estilos de la pagina Sobre mi_____________________________________________ */
+.sobre-mi {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.sobre-mi h1 {
+    font-size: 55px;
+}
+.sobre-mi a {
+    padding: 6px 12px;
+    text-transform: initial;
+    border: solid 1px #537A5A;
+    background-color: #537A5A;
+    color: white;
+    font-weight: 500;
+}
+.sobre-mi a:hover {
+    background-color: white;
+    color: #537A5A;
+    border: solid 1px #537A5A;
+    font-weight: 500;
+}
+.sobre-mi p{
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 2;
+    margin-bottom: 50px;
+}
+h3 {
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.curriculum i {
+    font-size: 50px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    color: white;
+    background-color: #537A5A;
+    padding: 20px;
+}
+.curriculum ul {
+    list-style: none;
+    padding-left: 0;
+}
+.curriculum i, h3, ul, p {
+    padding-top: 25px;
+}
+.experiencia p {
+    color: rgb(97, 97, 97)
+}
+section .experiencia {
+    color: white;
+    background-color: rgb(45, 45, 45);
+    margin-bottom: 0;
+}
+.experiencia hr {
+    background-color: white;
+}
+.img-circle {
+    max-width: 360px;
+    margin: 1em auto;
+    display: block;
+    filter: grayscale(100%);
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: inset 5px 5px 10px 0px rgba(209,209,209,0.63);
+    border-radius: 50%;
+}
+.fondo {
+    background-image: url(../images/Fondos-07.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

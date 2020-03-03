@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos</title>
+    <title>Inicio</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap"
         rel="stylesheet">
     <!--jQuery se pone antes para que Bootstrap lo pueda encontrar-->
@@ -16,36 +16,55 @@
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-md navbar-dark">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="sobre-mi.html">Sobre mí</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="proyectos.html">Proyectos</a>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                    </li>
-                </ul>
+    <div id="home" class="container-fluid">
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                    aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre-mi.html">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="proyectos.html">Proyectos</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section>
+            <div class="container index">
+                <div class="row">
+                    <div class="col-12">
+                        <h1> ¡Hola! <br>
+                            Bienvenido a mi web </h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Desarrollador Full Stack</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <a href="proyectos.html" class="btn btn-md"> Ver mis proyectos </a>
+                    </div>
+                </div>
             </div>
-        </nav>
-    </header>
-    <section>
-
-    </section>
+        </section>
+    </div>
     <footer>
         <div class="container">
-            <div class="row py-5">
+            <div class="row py-4">
                 <div class="col-12 col-sm-4 text-sm-left text-center">
                     <a href="index.html">
                         <p>©Todos los derechos reservados</p>
@@ -59,8 +78,10 @@
                 </div>
                 <div class="col-12 col-sm-4 text-sm-right text-center py-3 py-sm-0">
                     <p> Patrocinado por </p>
-                    <p> <a href="http://depcsuite.com"> DePC Suite </a> </p>
+                    <p> <a href="http://depcsuite.com" target="_blank"> DePC Suite </a> </p>
                 </div>
             </div>
         </div>
     </footer>
+    </body>
+    </html>
